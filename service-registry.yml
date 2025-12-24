@@ -10,4 +10,4 @@ eureka:
 
   server:
     enable-self-preservation: false
-
+    enable-replication: false
