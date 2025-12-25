@@ -14,7 +14,7 @@ spring:
       show-sql: true
 
 jwt:
-  secret: my-super-secret-key-should-be-long
+  secret: CLOUD-NATIVE-MICROSERVICE-APP-KEY
   expiration: 3600000  # 1 hour in ms
 
 
