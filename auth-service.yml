@@ -13,6 +13,11 @@ spring:
       ddl-auto: update
       show-sql: true
 
+jwt:
+  secret: my-super-secret-key-should-be-long
+  expiration: 3600000  # 1 hour in ms
+
+
   h2:
     console:
       enabled: true
