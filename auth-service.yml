@@ -5,7 +5,7 @@ spring:
   datasource:
     url: jdbc:postgresql://db.dndcwppfihrkwkbloowm.supabase.co:5432/postgres?currentSchema=auth
     username: postgres
-    password: ${SUPABASE_DB_PASSWORD}
+    password: WpjZGgCm5uVYm21t
 
 
   jpa:
