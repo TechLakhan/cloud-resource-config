@@ -5,6 +5,30 @@ spring:
   application:
     name: resource-monitoring-service
 
+  datasource:
+    url: jdbc:postgresql://db.dndcwppfihrkwkbloowm.supabase.co:5432/postgres?
+    username: postgres
+    password: WpjZGgCm5uVYm21t
+    driver-class-name: org.postgresql.Driver
+
+    hikari:
+      data-source-properties:
+        ssl: true
+        sslmode: require
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  sql:
+    init:
+      mode: never
+
+
   cloud:
     config:
       uri: http://localhost:8888

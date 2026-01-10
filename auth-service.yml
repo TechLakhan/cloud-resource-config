@@ -3,24 +3,24 @@ server:
 
 spring:
   datasource:
-    url: jdbc:h2:mem:authdb
-    driver-class-name: org.h2.Driver
-    username: sa
-    password: ""
+    url: jdbc:postgresql://db.dndcwppfihrkwkbloowm.supabase.co:5432/postgres?currentSchema=auth
+    username: postgres
+    password: WpjZGgCm5uVYm21t
 
   jpa:
     hibernate:
       ddl-auto: update
-      show-sql: true
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        default_schema: auth
 
 jwt:
   secret: CLOUD-NATIVE-MICROSERVICE-APP-KEY
   expiration: 3600000  # 1 hour in ms
 
 
-  h2:
-    console:
-      enabled: true
-      path: /h2-console
+
 
 
