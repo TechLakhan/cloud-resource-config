@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://db.dndcwppfihrkwkbloowm.supabase.co:5432/postgres?currentSchema=auth
+    url: jdbc:postgresql://db.dndcwppfihrkwkbloowm.supabase.co:5432/postgres?currentSchema=auth_service
     username: postgres
     password: WpjZGgCm5uVYm21t
 
@@ -15,7 +15,7 @@ spring:
     properties:
       hibernate:
         format_sql: true
-        default_schema: auth
+        default_schema: auth_service
 
 jwt:
   secret: CLOUD-NATIVE-MICROSERVICE-APP-KEY
