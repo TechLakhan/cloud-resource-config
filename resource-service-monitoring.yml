@@ -6,7 +6,7 @@ spring:
     name: resource-monitoring-service
 
   datasource:
-    url: jdbc:postgresql://db.dndcwppfihrkwkbloowm.supabase.co:5432/postgres?
+    url: jdbc:postgresql://db.dndcwppfihrkwkbloowm.supabase.co:5432/postgres?currentSchema=resource_monitoring
     username: postgres
     password: WpjZGgCm5uVYm21t
     driver-class-name: org.postgresql.Driver
@@ -18,7 +18,7 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     show-sql: true
     properties:
       hibernate:
