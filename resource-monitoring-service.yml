@@ -35,8 +35,3 @@ eureka:
       defaultZone: http://localhost:8676/eureka/
       register-with-eureka: true
       fetch-registry: true
-
-management:
-  endpoints:
-    web:
-      exposure: info,health
