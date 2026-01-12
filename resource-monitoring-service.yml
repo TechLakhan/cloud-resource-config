@@ -24,10 +24,6 @@ spring:
       hibernate:
         format_sql: true
 
-  sql:
-    init:
-      mode: never
-
 
   cloud:
     config:
